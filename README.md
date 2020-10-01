@@ -1,3 +1,3 @@
 # damien-millet.dev
 
-wrote with Deno + Md + React
+wrote with Deno + Ts + React + Md
