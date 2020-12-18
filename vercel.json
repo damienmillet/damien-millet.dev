@@ -1,12 +1,27 @@
 {
   "public": false,
   "routes": [
-    { "src": "/", "dest": "/api/index.ts" },
-    { "src": "/blog", "dest": "/api/blog.ts" },
-    { "src": "/cheatsheets", "dest": "/api/cheatsheets.ts" }
+    {
+      "src": "/",
+      "dest": "/api/index.ts"
+    },
+    {
+      "src": "/blog",
+      "dest": "/api/blog.ts"
+    },
+    {
+      "src": "/cheatsheets",
+      "dest": "/api/cheatsheets.ts"
+    },
+    {
+      "src": "/mail",
+      "dest": "/api/sendMail.ts"
+    }
   ],
   "functions": {
-    "api/**/*.ts": { "runtime": "vercel-deno@0.7.1" }
+    "api/**/*.ts": {
+      "runtime": "vercel-deno@0.7.1"
+    }
   },
   "build": {
     "env": {
