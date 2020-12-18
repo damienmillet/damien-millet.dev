@@ -1,5 +1,7 @@
-import { ServerRequest } from "https://deno.land/std@0.70.0/http/server.ts";
+import { opine } from "https://deno.land/x/opine@0.27.0/mod.ts";
 
-export default async (req: ServerRequest) => {
-  req.respond({ body: `Index` });
-};
+const app = opine();
+
+app.get("/", function (req, res) {
+  res.send("Hello World");
+});
